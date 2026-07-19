@@ -12,132 +12,149 @@
 <meta property="og:title" content="Legal Sanity Brasil | Regularização Sanitária e Assessoria Jurídica">
 <meta property="og:description" content="Regularize seu estabelecimento com segurança: Manual de Boas Práticas, POP, PGRSS, treinamentos e defesa em autuações da Vigilância Sanitária. Atendimento em todo o Brasil.">
 <meta property="og:url" content="https://legalsanitybrasil.com.br/">
-<meta property="og:image" content="https://legalsanitybrasil.com.br/assets/logo.png">
+<meta property="og:image" content="https://legalsanitybrasil.com.br/assets/icon.png">
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" type="image/png" href="assets/icon.png">
+<link rel="preload" href="assets/icon.png" as="image">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 
-<script type="application/ld+json">
+<script type="application/ld+json" data-ld="main">
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Legal Sanity Brasil",
   "description": "Consultoria jurídica e sanitária para estabelecimentos de interesse da Vigilância Sanitária.",
   "url": "https://legalsanitybrasil.com.br/",
-  "logo": "https://legalsanitybrasil.com.br/assets/logo.png",
-  "image": "https://legalsanitybrasil.com.br/assets/logo.png",
+  "logo": "https://legalsanitybrasil.com.br/assets/icon.png",
+  "image": "https://legalsanitybrasil.com.br/assets/icon.png",
   "email": "contato@legalsanitybrasil.com.br",
   "telephone": "+5512991632742",
   "areaServed": "BR",
-  "sameAs": ["https://instagram.com/legalsanitybrasil"]
+  "sameAs": ["https://instagram.com/legalsanitybrasil"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "BR"
+  },
+  "priceRange": "$$"
 }
 </script>
 
 <style>
 :root{
-  --navy:#112941;
-  --navy-2:#1c3a5c;
-  --green:#2BAB4E;
-  --green-dark:#1a7c3c;
-  --green-pale:#E6F4EA;
-  --paper:#F6F7F2;
-  --paper-2:#EBEFE7;
+  --paper:#F7F7F4;
+  --paper-2:#EEF0EB;
+  --white:#FFFFFF;
+  --surface:#FFFFFF;
+  --surface-hover:#F3F5F0;
+  --navy:#0F2637;
+  --navy-2:#1A3A55;
+  --green:#1F9E3F;
+  --green-dark:#167A2E;
+  --green-light:#DFF5E5;
+  --green-pale:#E8F8EE;
+  --green-subtle:#F0F9F2;
   --gold:#B98526;
-  --gold-pale:#FBF0D9;
+  --gold-pale:#F7EDD4;
+  --gold-subtle:#FDF8EE;
   --text:#111B24;
-  --text-2:#37454F;
-  --border:#D7DFD6;
-  --on-dark:#EDF2F4;
-  --on-dark-muted:#A9BCC6;
-  --serif:'Fraunces', serif;
-  --sans:'Inter', sans-serif;
-  --mono:'IBM Plex Mono', monospace;
+  --text-2:#3D4A57;
+  --text-3:#6B7A88;
+  --border:#D5DDD4;
+  --border-2:#E3E9E2;
+  --shadow-sm:0 1px 3px rgba(15,38,55,.06);
+  --shadow-md:0 4px 14px rgba(15,38,55,.08);
+  --shadow-lg:0 8px 28px rgba(15,38,55,.1);
+  --shadow-xl:0 16px 48px rgba(15,38,55,.12);
+  --radius-sm:5px;
+  --radius-md:9px;
+  --radius-lg:13px;
+  --radius-xl:17px;
+  --transition: .25s cubic-bezier(.4,0,.2,1);
 }
-*{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+@media (max-width:600px){html{font-size:15px;}}
+html{scroll-behavior:smooth;scroll-padding-top:80px;}
 body{
-  font-family:var(--sans);
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color:var(--text);
   background:var(--paper);
-  line-height:1.7;
+  line-height:1.75;
   -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
   font-size:16px;
+  font-weight:450;
+  overflow-x:hidden;
+  overflow-wrap:break-word;
+  word-wrap:break-word;
 }
-img{max-width:100%;display:block;}
-a{color:inherit;}
+img{max-width:100%;display:block;height:auto;}
+a{color:inherit;text-decoration:none;}
+:focus-visible{outline:2px solid var(--green);outline-offset:3px;border-radius:3px;}
+::selection{background:var(--green);color:var(--white);}
 .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
 .eyebrow{
-  font-family:var(--mono);
+  font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;
+  font-size:12.5px;
   font-weight:600;
-  font-size:14.5px;
-  letter-spacing:.08em;
+  letter-spacing:.12em;
   text-transform:uppercase;
   color:var(--green-dark);
   display:flex;
   align-items:center;
-  gap:10px;
-  margin-bottom:18px;
+  gap:12px;
+  margin-bottom:14px;
 }
 .eyebrow::before{
   content:"";
   width:22px;height:2px;
-  background:var(--green-dark);
-  display:inline-block;
+  background:var(--green);
+  display:block;
+  flex-shrink:0;
 }
-h1,h2,h3{font-family:var(--serif);color:var(--navy);letter-spacing:-.01em;}
-h1{font-size:clamp(36px,5vw,58px);line-height:1.1;font-weight:700;}
-h2{font-size:clamp(28px,3.4vw,38px);line-height:1.2;font-weight:700;}
-h3{font-size:20.5px;line-height:1.35;font-weight:700;}
-p{color:var(--text-2);text-align:justify;font-size:16.5px;}
-.lede{font-size:19.5px;line-height:1.7;max-width:640px;}
-
-/* header */
-header{
-  position:sticky;top:0;z-index:80;
-  background:var(--paper);
-  border-bottom:1px solid var(--border);
-}
-.nav{
-  display:flex;align-items:center;justify-content:space-between;
-  padding:16px 0;
-}
-.brand{display:flex;align-items:center;gap:14px;text-decoration:none;}
-.brand img{height:62px;width:auto;display:block;}
-.brand-text{font-family:var(--mono);font-weight:600;font-size:11.5px;letter-spacing:.09em;color:var(--green-dark);text-transform:uppercase;line-height:1.5;max-width:130px;}
-nav.links{display:flex;gap:30px;align-items:center;}
-nav.links a{
-  font-size:16px;font-weight:500;text-decoration:none;color:var(--navy);
-  position:relative;
-}
-nav.links a:not(.btn)::after{
-  content:"";position:absolute;left:0;bottom:-4px;width:0;height:2px;background:var(--green);
-  transition:width .2s ease;
-}
-nav.links a:not(.btn):hover::after{width:100%;}
-.menu-toggle{display:none;}
+h1,h2,h3{font-family:'Fraunces',serif;color:var(--navy);letter-spacing:-.02em;line-height:1.2;}
+h1{font-size:clamp(28px,4.8vw,54px);font-weight:700;line-height:1.08;}
+h2{font-size:clamp(24px,3vw,36px);font-weight:600;}
+h3{font-size:clamp(17px,1.2vw,20px);font-weight:600;line-height:1.35;}
+p{color:var(--text-2);font-size:16px;line-height:1.75;font-weight:450;text-align:left;}
+.lede{font-size:clamp(16px,1.2vw,19px);line-height:1.7;max-width:620px;color:var(--text-2);font-weight:450;}
 
 .btn{
-  display:inline-flex;align-items:center;gap:8px;
-  font-family:var(--sans);font-weight:600;font-size:16px;
-  padding:13px 25px;border-radius:3px;text-decoration:none;
-  border:1px solid transparent;cursor:pointer;
-  white-space:nowrap;
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:'Inter',sans-serif;font-weight:600;font-size:15.5px;
+  padding:13px 26px;border-radius:var(--radius-sm);text-decoration:none;
+  border:1.5px solid transparent;cursor:pointer;
+  white-space:nowrap;transition:var(--transition);
 }
-.btn-primary{background:var(--green);color:#fff;}
-.btn-primary:hover{background:var(--green-dark);}
-.btn-ghost{border-color:var(--navy);color:var(--navy);background:transparent;}
-.btn-ghost:hover{background:var(--navy);color:#fff;}
-.btn svg{width:18px;height:18px;flex-shrink:0;}
-.microcopy{font-size:13.5px;color:var(--text-2);margin-top:10px;text-align:left;}
+.btn-primary{
+  background:var(--navy);color:var(--white);border-color:var(--navy);
+}
+.btn-primary:hover{
+  background:var(--navy-2);border-color:var(--navy-2);
+  transform:translateY(-1px);
+}
+.btn-primary:active{transform:translateY(0);}
+.btn-ghost{
+  border-color:var(--navy);color:var(--navy);background:transparent;
+}
+.btn-ghost:hover{
+  background:var(--navy);color:var(--white);
+  transform:translateY(-1px);
+}
+.btn-ghost:active{transform:translateY(0);}
+.btn svg{width:17px;height:17px;flex-shrink:0;}
 
-/* reveal on scroll */
-.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease, transform .6s ease;}
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease;}
 .reveal.in{opacity:1;transform:translateY(0);}
+.reveal-d1{transition-delay:.1s;}
+.reveal-d2{transition-delay:.2s;}
+.reveal-d3{transition-delay:.3s;}
+.reveal-d4{transition-delay:.4s;}
 @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none;}}
 
 /* divider */
@@ -145,316 +162,447 @@ nav.links a:not(.btn):hover::after{width:100%;}
 .divider path{fill:var(--paper);}
 .divider.to-alt path{fill:var(--paper-2);}
 
-/* hero */
-.hero{padding:56px 0 0;position:relative;overflow:hidden;}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding-bottom:40px;}
-.hero p.lede{margin:20px 0 30px;}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:flex-start;margin-bottom:14px;}
-.trust-strip{display:flex;flex-direction:column;gap:12px;border-top:1px dashed var(--border);padding-top:22px;margin-top:22px;}
-.trust-item{display:flex;gap:10px;align-items:flex-start;font-size:16px;color:var(--text-2);text-align:left;}
-.trust-item svg{width:18px;height:18px;flex-shrink:0;margin-top:2px;color:var(--green-dark);}
+/* ===== HEADER ===== */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(247,247,244,.88);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:var(--transition);
+}
+header.scrolled{border-bottom-color:var(--border-2);box-shadow:var(--shadow-md);}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:13px 0;
+}
+.brand{display:flex;align-items:center;gap:14px;}
+.brand img{height:58px;width:auto;transition:var(--transition);}
+header.scrolled .brand img{height:48px;}
+.brand-text{
+  font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;
+  font-weight:600;font-size:11px;letter-spacing:.1em;
+  color:var(--green-dark);text-transform:uppercase;line-height:1.5;max-width:130px;
+}
+nav.links{display:flex;gap:26px;align-items:center;}
+nav.links a{
+  font-size:15px;font-weight:500;color:var(--text-2);
+  position:relative;transition:var(--transition);padding:4px 0;
+}
+nav.links a::after{
+  content:"";position:absolute;left:0;bottom:0;width:0;height:2px;
+  background:var(--green);border-radius:1px;
+  transition:width .25s ease;
+}
+nav.links a:hover{color:var(--navy);}
+nav.links a:hover::after{width:100%;}
+.menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:6px;position:relative;z-index:110;color:var(--navy);}
+.menu-toggle svg{width:26px;height:26px;transition:var(--transition);}
+
+/* ===== HERO ===== */
+.hero{
+  padding:120px 0 40px;position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-30%;right:-10%;width:60%;height:120%;
+  background:radial-gradient(ellipse at center, rgba(31,158,63,.04) 0%, transparent 70%);
+  pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
+.hero p.lede{margin:18px 0 26px;}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:flex-start;}
+.trust-strip{display:flex;flex-direction:column;gap:10px;border-top:1px solid var(--border-2);padding-top:18px;margin-top:22px;}
+.trust-item{display:flex;gap:10px;align-items:flex-start;font-size:15px;color:var(--text-2);text-align:left;font-weight:450;}
+.trust-item svg{width:17px;height:17px;flex-shrink:0;margin-top:3px;color:var(--green);}
 
 /* seal */
 .seal-wrap{display:flex;justify-content:center;align-items:center;}
-.seal-stage{position:relative;width:280px;height:280px;}
-.seal-ring{position:absolute;inset:0;animation:spin 44s linear infinite;}
+.seal-stage{position:relative;width:320px;height:320px;}
+.seal-ring{position:absolute;inset:0;animation:spin 40s linear infinite;}
 @media (prefers-reduced-motion: reduce){.seal-ring{animation:none;}}
-@keyframes spin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+@keyframes spin{to{transform:rotate(360deg);}}
 .seal-center{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
-.seal-center img{width:148px;}
+.seal-center img{width:140px;height:140px;border-radius:50%;object-fit:cover;}
 
-/* sections */
-section{padding:76px 0;}
+/* ===== SECTIONS ===== */
+section{padding:80px 0;}
 .section-alt{background:var(--paper-2);}
 .section-head{max-width:640px;margin-bottom:48px;}
 .section-head p{text-align:left;}
 
-/* cta strip */
+/* ===== CTA STRIP ===== */
 .cta-strip{
-  background:var(--navy);border-radius:8px;padding:36px 40px;
+  background:linear-gradient(135deg, var(--navy) 0%, #1A3A55 100%);
+  border-radius:var(--radius-lg);padding:38px 42px;
   display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
 }
-.cta-strip p{color:var(--on-dark);font-size:18px;font-weight:600;text-align:left;max-width:520px;font-family:var(--serif);}
-.cta-strip .btn-primary{flex-shrink:0;}
+.cta-strip p{color:var(--white);font-size:18px;font-weight:600;text-align:left;max-width:500px;font-family:'Fraunces',serif;line-height:1.4;}
+.cta-strip .btn-primary{background:var(--white);color:var(--navy);border-color:var(--white);}
+.cta-strip .btn-primary:hover{background:var(--green);color:var(--white);border-color:var(--green);box-shadow:none;}
 
-/* problem */
+/* ===== PROBLEM ===== */
 .problem-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
 .problem-grid p{text-align:left;}
-.problem-list{list-style:none;display:flex;flex-direction:column;gap:16px;}
+.problem-list{list-style:none;display:flex;flex-direction:column;gap:12px;}
 .problem-list li{
   display:flex;gap:14px;align-items:flex-start;
-  padding:18px 20px;background:#fff;border:1px solid var(--border);border-radius:4px;
-  font-size:16.5px;color:var(--text-2);text-align:left;
+  padding:18px 22px;background:var(--white);border:1px solid var(--border-2);
+  border-radius:var(--radius-md);
+  font-size:16px;color:var(--text-2);text-align:left;transition:var(--transition);font-weight:450;
 }
+.problem-list li:hover{box-shadow:var(--shadow-md);}
 .problem-list li svg{width:19px;height:19px;flex-shrink:0;margin-top:2px;color:var(--gold);}
-.problem-list b{color:var(--navy);font-weight:700;}
+.problem-list b{color:var(--navy);font-weight:600;}
 
-/* services */
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border);border:1px solid var(--border);}
-.service-card{background:#fff;padding:30px 26px;display:flex;flex-direction:column;gap:14px;}
-.service-num{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--gold);letter-spacing:.08em;}
-.service-card p{font-size:16px;text-align:left;}
-.service-card .icon{width:27px;height:27px;color:var(--green-dark);}
+/* ===== SERVICES ===== */
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border-2);border:1px solid var(--border-2);border-radius:var(--radius-lg);overflow:hidden;}
+.service-card{background:var(--white);padding:30px 26px;display:flex;flex-direction:column;gap:12px;transition:var(--transition);}
+.service-card:hover{background:var(--green-pale);}
+.service-num{font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.08em;}
+.service-card p{font-size:14.5px;text-align:left;color:var(--text-2);font-weight:450;}
+.service-card .icon{width:24px;height:24px;color:var(--green);}
 
-/* segments */
-.segments-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+/* ===== SEGMENTS ===== */
+.segments-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
 .segment-chip{
-  background:#fff;border:1px solid var(--border);border-radius:4px;
-  padding:20px 18px;display:flex;flex-direction:column;gap:12px;
-  font-size:16px;font-weight:500;color:var(--navy);
+  background:var(--white);border:1px solid var(--border-2);border-radius:var(--radius-md);
+  padding:20px 18px;display:flex;flex-direction:column;gap:10px;
+  font-size:15px;font-weight:500;color:var(--navy);line-height:1.4;
+  transition:var(--transition);box-shadow:var(--shadow-sm);
 }
-.segment-chip svg{width:24px;height:24px;color:var(--green-dark);}
+.segment-chip:hover{box-shadow:var(--shadow-md);}
+.segment-chip svg{width:22px;height:22px;color:var(--green);flex-shrink:0;}
 .segment-note{
-  margin-top:22px;font-size:16px;padding:20px 22px;text-align:left;
-  border-left:3px solid var(--green);background:var(--green-pale);color:var(--navy);
+  margin-top:22px;font-size:15.5px;padding:18px 22px;text-align:left;
+  border-left:3px solid var(--green);background:var(--green-subtle);color:var(--text-2);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-weight:450;
 }
-.segment-note a{color:var(--green-dark);font-weight:700;text-decoration:underline;}
+.segment-note a{color:var(--green-dark);font-weight:600;text-decoration:underline;}
 
-/* process */
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;}
-.step-num{font-family:var(--serif);font-size:36px;font-weight:700;color:var(--green);margin-bottom:10px;}
-.process-step h3{margin-bottom:8px;}
-.process-step p{font-size:16px;text-align:left;}
-
-/* differentials */
-.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-.diff-item{display:flex;gap:16px;padding:24px 0;border-bottom:1px solid var(--border);}
-.diff-item svg{width:26px;height:26px;color:var(--gold);flex-shrink:0;}
-.diff-item h3{margin-bottom:6px;font-size:18.5px;}
-.diff-item p{font-size:16px;text-align:left;}
-
-/* kits */
-.kits-intro{
-  display:flex;align-items:center;gap:12px;margin-bottom:32px;padding:16px 20px;
-  background:var(--gold-pale);border-left:3px solid var(--gold);border-radius:4px;
-  font-size:15.5px;color:var(--navy);font-weight:500;text-align:left;
+/* ===== PROCESS ===== */
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;position:relative;}
+.process-grid::before{
+  content:'';position:absolute;top:36px;left:calc(12.5% + 16px);right:calc(12.5% + 16px);
+  height:2px;background:linear-gradient(to right, var(--green), var(--green-dark));
+  z-index:0;
 }
-.kits-intro svg{width:22px;height:22px;color:var(--gold);flex-shrink:0;}
-.kits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
-.kit-card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:32px 28px;display:flex;flex-direction:column;gap:16px;position:relative;}
-.kit-card.featured{border:2px solid var(--green);}
-.kit-flag{
-  position:absolute;top:-13px;left:28px;background:var(--green);color:#fff;
-  font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;
-  padding:5px 12px;border-radius:3px;text-transform:uppercase;
+@media (max-width:920px){.process-grid::before{display:none;}}
+.step-num{
+  font-family:'Fraunces',serif;font-size:36px;font-weight:700;color:var(--green);
+  line-height:1;position:relative;z-index:1;
+  display:inline-flex;align-items:center;justify-content:center;
+  width:52px;height:52px;background:var(--green-light);border-radius:50%;
 }
-.kit-icon{width:52px;height:52px;border-radius:50%;background:var(--green-pale);display:flex;align-items:center;justify-content:center;color:var(--green-dark);}
-.kit-icon svg{width:26px;height:26px;}
-.kit-eyebrow{font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.05em;color:var(--gold);text-transform:uppercase;}
-.kit-card h3{font-size:19px;}
-.kit-card p{font-size:15.5px;text-align:left;}
-.kit-list{list-style:none;display:flex;flex-direction:column;gap:9px;margin-top:2px;}
-.kit-list li{display:flex;gap:9px;font-size:15px;color:var(--text-2);align-items:flex-start;text-align:left;}
-.kit-list li svg{width:16px;height:16px;color:var(--green-dark);flex-shrink:0;margin-top:3px;}
-.kit-card .btn{margin-top:8px;justify-content:center;}
+.process-step h3{margin-bottom:6px;margin-top:6px;}
+.process-step p{font-size:15px;text-align:left;font-weight:450;line-height:1.65;}
 
-/* faq */
-.faq-list{display:flex;flex-direction:column;gap:10px;max-width:820px;}
-details{background:#fff;border:1px solid var(--border);padding:22px 26px;border-radius:4px;}
+/* ===== DIFFERENTIALS ===== */
+.diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.diff-item{
+  display:flex;gap:16px;padding:26px 0;
+  border-bottom:1px solid var(--border-2);transition:var(--transition);
+}
+.diff-item:nth-last-child(-n+2){border-bottom:none;}
+.diff-item:hover{padding-left:8px;}
+.diff-item svg{width:24px;height:24px;color:var(--gold);flex-shrink:0;margin-top:3px;}
+.diff-item h3{margin-bottom:5px;font-size:17px;}
+.diff-item p{font-size:15px;text-align:left;font-weight:450;line-height:1.65;}
+
+/* ===== DOCUMENTAÇÕES ===== */
+.docs-intro{
+  display:flex;align-items:center;gap:12px;margin-bottom:28px;padding:16px 20px;
+  background:var(--gold-subtle);border-left:3px solid var(--gold);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  font-size:15px;color:var(--text-2);font-weight:500;text-align:left;
+}
+.docs-intro svg{width:20px;height:20px;color:var(--gold);flex-shrink:0;}
+.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.doc-card{
+  background:var(--white);border:1px solid var(--border-2);border-radius:var(--radius-lg);
+  padding:32px 26px;display:flex;flex-direction:column;gap:14px;position:relative;
+  transition:var(--transition);box-shadow:var(--shadow-sm);
+}
+.doc-card:hover{box-shadow:var(--shadow-lg);}
+.doc-card.featured{border-color:var(--green);box-shadow:0 0 0 1px var(--green), var(--shadow-md);}
+.doc-flag{
+  position:absolute;top:-11px;left:26px;background:var(--green);color:var(--white);
+  font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;
+  font-size:11px;font-weight:600;letter-spacing:.06em;
+  padding:4px 12px;border-radius:3px;text-transform:uppercase;
+}
+.doc-icon{
+  width:46px;height:46px;border-radius:50%;background:var(--green-light);
+  display:flex;align-items:center;justify-content:center;color:var(--green);
+}
+.doc-icon svg{width:22px;height:22px;}
+.doc-eyebrow{font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;font-size:11.5px;font-weight:600;letter-spacing:.06em;color:var(--gold);text-transform:uppercase;}
+.doc-card h3{font-size:18px;}
+.doc-card p{font-size:14.5px;text-align:left;color:var(--text-2);font-weight:450;}
+.doc-list{list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:4px;}
+.doc-list li{display:flex;gap:9px;font-size:14px;color:var(--text-2);align-items:flex-start;text-align:left;font-weight:450;}
+.doc-list li svg{width:15px;height:15px;color:var(--green);flex-shrink:0;margin-top:3px;}
+.doc-card .btn{margin-top:6px;}
+
+/* ===== FAQ ===== */
+.faq-list{display:flex;flex-direction:column;gap:8px;max-width:820px;}
+details{
+  background:var(--white);border:1px solid var(--border-2);padding:0;
+  border-radius:var(--radius-md);overflow:hidden;
+  transition:var(--transition);box-shadow:var(--shadow-sm);
+}
+details:hover{box-shadow:var(--shadow-md);}
+details[open]{box-shadow:var(--shadow-md);}
 summary{
-  cursor:pointer;font-weight:700;color:var(--navy);font-size:17px;
-  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;text-align:left;
+  cursor:pointer;font-weight:600;color:var(--navy);font-size:16px;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;
+  gap:16px;text-align:left;padding:20px 24px;user-select:none;
 }
 summary::-webkit-details-marker{display:none;}
-summary .plus{font-family:var(--mono);font-size:20px;color:var(--green-dark);flex-shrink:0;display:inline-block;transition:transform .2s ease;}
+summary .plus{
+  font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;
+  font-size:19px;color:var(--green);
+  flex-shrink:0;display:inline-block;transition:transform .3s ease;
+}
 details[open] summary .plus{transform:rotate(45deg);}
-details p{margin-top:14px;font-size:16px;}
-.faq-close{max-width:820px;margin-top:28px;padding:22px 26px;background:#fff;border:1px dashed var(--border);border-radius:4px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-.faq-close p{margin:0;font-size:15.5px;text-align:left;max-width:400px;}
+details[open] summary{border-bottom:1px solid var(--border-2);}
+details .answer{padding:0 24px 20px;animation:fadeIn .3s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}
+details p{margin-top:12px;font-size:15.5px;}
+.faq-close{
+  max-width:820px;margin-top:26px;padding:20px 26px;
+  background:var(--white);border:1px dashed var(--border-2);border-radius:var(--radius-md);
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.faq-close p{margin:0;font-size:15px;text-align:left;max-width:400px;font-weight:450;}
 
-/* final cta */
-.final-cta{text-align:center;padding:88px 0;}
+/* ===== FINAL CTA ===== */
+.final-cta{text-align:center;padding:96px 0;position:relative;}
+.final-cta::before{
+  content:'';position:absolute;inset:0;
+  background:url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=60') center/cover fixed;
+  opacity:.04;pointer-events:none;
+}
 .final-cta .eyebrow{justify-content:center;}
-.final-cta h2{max-width:680px;margin:0 auto 18px;}
-.final-cta p{max-width:540px;margin:0 auto 32px;text-align:center;}
-.final-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.final-cta h2{max-width:680px;margin:0 auto 16px;}
+.final-cta p{max-width:540px;margin:0 auto 30px;text-align:center;}
 
-/* footer */
-footer{background:var(--navy);color:var(--on-dark-muted);padding:60px 0 30px;}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:44px;}
-.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:16px;}
-.footer-brand img{height:54px;filter:brightness(0) invert(1);}
-.footer-grid p{font-size:15.5px;max-width:320px;color:var(--on-dark-muted);text-align:left;}
-footer h4{font-family:var(--mono);font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dark-muted);margin-bottom:14px;}
-footer ul{list-style:none;display:flex;flex-direction:column;gap:11px;}
-footer a{text-decoration:none;font-size:15.5px;color:var(--on-dark);}
+/* ===== FOOTER ===== */
+footer{background:var(--navy);color:var(--text-3);padding:56px 0 28px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:44px;}
+.footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.footer-brand img{height:50px;width:50px;border-radius:50%;object-fit:cover;filter:brightness(0) invert(1);}
+.footer-grid p{font-size:14.5px;max-width:320px;color:var(--text-3);text-align:left;font-weight:450;}
+footer h4{
+  font-family:'IBM Plex Mono','Cascadia Code','JetBrains Mono',monospace;
+  font-size:11.5px;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--text-3);margin-bottom:14px;
+}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
+footer a{font-size:15px;color:var(--white);transition:var(--transition);font-weight:450;}
 footer a:hover{color:var(--green);}
 .footer-bottom{
-  border-top:1px solid rgba(255,255,255,.14);padding-top:22px;
+  border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
   display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
-  font-size:14px;color:var(--on-dark-muted);
+  font-size:13.5px;color:var(--text-3);
 }
 
-/* whatsapp float */
+/* ===== WHATSAPP FLOAT ===== */
 .wa-float{
   position:fixed;bottom:24px;right:24px;z-index:60;
-  width:58px;height:58px;border-radius:50%;background:var(--green);
+  width:56px;height:56px;border-radius:50%;background:var(--green);
   display:flex;align-items:center;justify-content:center;
-  text-decoration:none;box-shadow:0 4px 14px rgba(17,41,65,.28);
+  box-shadow:0 4px 16px rgba(31,158,63,.3);
+  transition:var(--transition);
 }
-.wa-float svg{width:29px;height:29px;color:#fff;}
+.wa-float:hover{transform:scale(1.06);box-shadow:0 6px 24px rgba(31,158,63,.4);}
+@media (prefers-reduced-motion: no-preference){
+  .wa-float{animation:waPulse 4s ease-in-out infinite;}
+  @keyframes waPulse{0%,100%{box-shadow:0 4px 16px rgba(31,158,63,.3);}50%{box-shadow:0 4px 24px rgba(31,158,63,.45);}}
+}
+.wa-float svg{width:26px;height:26px;color:var(--white);}
 
+/* ===== RESPONSIVE ===== */
 @media (max-width:1080px){
   .services-grid{grid-template-columns:repeat(2,1fr);}
 }
 @media (max-width:920px){
   .hero-grid{grid-template-columns:1fr;}
   .seal-wrap{order:-1;}
-  .seal-stage{width:190px;height:190px;}
-  .seal-center img{width:100px;}
+  .seal-stage{width:220px;height:220px;}
+  .seal-center img{width:100px;height:100px;}
   .problem-grid{grid-template-columns:1fr;}
   .segments-grid{grid-template-columns:1fr 1fr;}
-  .process-grid{grid-template-columns:1fr 1fr;row-gap:32px;}
+  .process-grid{grid-template-columns:1fr 1fr;gap:22px;}
   .diff-grid{grid-template-columns:1fr;}
-  .kits-grid{grid-template-columns:1fr;}
+  .diff-item:nth-last-child(-n+2){border-bottom:1px solid var(--border-2);}
+  .diff-item:last-child{border-bottom:none;}
+  .docs-grid{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;}
   .cta-strip{flex-direction:column;align-items:flex-start;text-align:left;}
+  .hero{padding-top:100px;}
   nav.links{
-    position:fixed;top:0;left:0;right:0;bottom:0;background:var(--paper);z-index:90;
+    position:fixed;top:0;left:0;right:0;bottom:0;
+    background:rgba(247,247,244,.97);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    z-index:105;
     flex-direction:column;justify-content:flex-start;align-items:flex-start;
-    padding:100px 28px 32px;gap:26px;
-    transform:translateX(100%);transition:transform .25s ease;
+    padding:100px 28px 32px;gap:22px;
+    transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1);
   }
   nav.links.open{transform:translateX(0);}
-  nav.links a{font-size:19px;}
-  nav.links a.btn{margin-top:8px;}
-  .menu-toggle{display:flex;background:none;border:none;cursor:pointer;padding:6px;position:relative;z-index:95;}
-  .menu-toggle svg{width:26px;height:26px;color:var(--navy);}
+  nav.links a{font-size:18px;}
+  nav.links a.btn{margin-top:2px;}
+  .menu-toggle{display:flex;}
 }
 @media (max-width:600px){
-  .services-grid{grid-template-columns:1fr;}
-  .segments-grid{grid-template-columns:1fr 1fr;}
-  .process-grid{grid-template-columns:1fr;}
-  p{text-align:left;}
+  .services-grid{grid-template-columns:1fr;border-radius:var(--radius-md);}
+  .segments-grid{grid-template-columns:1fr 1fr;gap:8px;}
+  .process-grid{grid-template-columns:1fr;gap:20px;}
   .wrap{padding:0 18px;}
   section{padding:52px 0;}
-  .brand img{height:46px;}
+  .brand img{height:44px;}
+  header.scrolled .brand img{height:38px;}
   .brand-text{display:none;}
-  .hero{padding-top:32px;}
-  .hero-grid{gap:32px;padding-bottom:28px;}
-  .seal-stage{width:150px;height:150px;}
-  .seal-center img{width:80px;}
+  .hero{padding-top:84px;}
+  .hero-grid{gap:24px;padding-bottom:16px;}
+  .seal-stage{width:170px;height:170px;}
+  .seal-center img{width:80px;height:80px;}
   .hero-ctas .btn, .final-ctas .btn{width:100%;justify-content:center;}
-  .kit-card{padding:26px 22px;}
-  .kit-flag{left:22px;}
+  .doc-card{padding:26px 20px;}
+  .doc-flag{left:20px;}
   .footer-bottom{flex-direction:column;gap:8px;}
-  .wa-float{width:52px;height:52px;bottom:18px;right:18px;}
-  .wa-float svg{width:26px;height:26px;}
-  h1{font-size:32px;}
-  h2{font-size:26px;}
-  .cta-strip{padding:28px 24px;}
-  .cta-strip p{font-size:17px;}
+  .wa-float{width:48px;height:48px;bottom:16px;right:16px;}
+  .wa-float svg{width:22px;height:22px;}
+  h1{font-size:28px;}
+  h2{font-size:22px;}
+  .cta-strip{padding:26px 22px;border-radius:var(--radius-md);}
+  .cta-strip p{font-size:16px;}
+  .section-head{margin-bottom:28px;}
+  .service-card{padding:24px 20px;}
+  .segment-chip{padding:16px 14px;}
+  .segments-grid{grid-template-columns:1fr;}
+  .final-cta{padding:56px 0;}
+  details .answer{padding:0 20px 18px;}
+  .faq-close{padding:16px 20px;}
+  nav.links{padding:88px 22px 28px;}
+}
+@media (max-width:380px){
+  .hero-ctas{flex-direction:column;}
+  .hero-ctas .btn{width:100%;justify-content:center;}
 }
 </style>
 </head>
 <body>
 
-<header>
+<a href="#inicio" class="skip-link" style="position:absolute;top:-100%;left:8px;background:var(--green);color:#fff;padding:12px 20px;z-index:200;border-radius:0 0 4px 4px;font-weight:600;transition:top .2s;">Ir para o conteúdo</a>
+
+<header id="header">
   <div class="wrap nav">
-    <a href="#inicio" class="brand">
-      <img src="assets/logo.png" alt="Legal Sanity Brasil">
+    <a href="#inicio" class="brand" aria-label="Legal Sanity Brasil - Página inicial">
+      <img src="assets/icon.png" alt="" width="58" height="58">
       <span class="brand-text">Consultoria<br>jurídica e sanitária</span>
     </a>
-    <nav class="links" id="navLinks">
+    <nav class="links" id="navLinks" aria-label="Navegação principal">
       <a href="#servicos">Serviços</a>
       <a href="#segmentos">Segmentos</a>
       <a href="#processo">Como funciona</a>
-      <a href="#kits">Kits</a>
+      <a href="#documentacoes">Documentações</a>
       <a href="#faq">Dúvidas</a>
-      <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20a%20regulariza%C3%A7%C3%A3o%20sanit%C3%A1ria%20do%20meu%20estabelecimento." class="btn btn-primary" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20a%20regulariza%C3%A7%C3%A3o%20sanit%C3%A1ria%20do%20meu%20estabelecimento." target="_blank" rel="noopener">Consultoria</a>
     </nav>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
 </header>
 
 <main>
 
-<section class="hero" id="inicio">
+<section class="hero" id="inicio" aria-label="Introdução">
   <div class="wrap hero-grid">
     <div>
       <p class="eyebrow">Consultoria jurídica e sanitária</p>
       <h1>Sua operação em dia com a Vigilância Sanitária, do primeiro alvará à última vistoria.</h1>
-      <p class="lede" style="text-align:left;">A Legal Sanity Brasil une advogados especializados em Direito Sanitário e consultores técnicos para regularizar, documentar e defender o seu estabelecimento perante os órgãos de Vigilância Sanitária — em qualquer lugar do Brasil.</p>
+      <p class="lede">A Legal Sanity Brasil une advogados especializados em Direito Sanitário e consultores técnicos para regularizar, documentar e defender o seu estabelecimento perante os órgãos de Vigilância Sanitária — em qualquer lugar do Brasil.</p>
       <div class="hero-ctas">
         <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20a%20regulariza%C3%A7%C3%A3o%20sanit%C3%A1ria%20do%20meu%20estabelecimento." class="btn btn-primary" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.59.45.24.58.81 2.01.88 2.16.07.15.11.32.02.5-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.51 1.9 1.04.94 1.92 1.24 2.19 1.38.28.13.44.11.6-.07.16-.18.7-.82.88-1.1.19-.28.37-.23.62-.14.26.09 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.71-.17 1.39z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.59.45.24.58.81 2.01.88 2.16.07.15.11.32.02.5-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.51 1.9 1.04.94 1.92 1.24 2.19 1.38.28.13.44.11.6-.07.16-.18.7-.82.88-1.1.19-.28.37-.23.62-.14.26.09 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.71-.17 1.39z"/></svg>
           Falar no WhatsApp
         </a>
         <a href="#servicos" class="btn btn-ghost">Ver serviços</a>
       </div>
-      <p class="microcopy">Resposta em poucas horas, sem compromisso.</p>
       <div class="trust-strip">
         <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
           Atendimento 100% remoto para todo o Brasil
         </div>
         <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
           Equipe jurídica com formação avançada em Direito Sanitário
         </div>
         <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
           Consultoria técnica com vivência prática em processos de Vigilância Sanitária
         </div>
       </div>
     </div>
     <div class="seal-wrap">
       <div class="seal-stage">
-        <svg class="seal-ring" viewBox="0 0 280 280">
+        <svg class="seal-ring" viewBox="0 0 280 280" aria-hidden="true">
           <defs>
             <path id="circlePath" d="M 140,140 m -108,0 a 108,108 0 1,1 216,0 a 108,108 0 1,1 -216,0" />
           </defs>
-          <circle cx="140" cy="140" r="132" fill="none" stroke="#D7DFD6" stroke-width="1"/>
-          <circle cx="140" cy="140" r="108" fill="none" stroke="#2BAB4E" stroke-width="1.5" stroke-dasharray="2 5"/>
-          <text font-family="IBM Plex Mono" font-size="11.5" font-weight="600" fill="#112941">
+          <circle cx="140" cy="140" r="132" fill="none" stroke="#D5DDD4" stroke-width="1"/>
+          <circle cx="140" cy="140" r="108" fill="none" stroke="#1F9E3F" stroke-width="1.5" stroke-dasharray="2 5"/>
+          <text font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="600" fill="#3D4A57">
             <textPath href="#circlePath" startOffset="0" textLength="678.6" lengthAdjust="spacingAndGlyphs">LEGAL SANITY BRASIL • CONSULTORIA JURÍDICA E SANITÁRIA • ATUAÇÃO EM TODO O BRASIL • </textPath>
           </text>
         </svg>
-        <div class="seal-center"><img src="assets/logo.png" alt="Legal Sanity Brasil"></div>
+        <div class="seal-center"><img src="assets/icon.png" alt="Legal Sanity Brasil" width="140" height="140"></div>
       </div>
     </div>
   </div>
-  <svg class="divider to-alt" viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,32 C300,64 900,0 1200,32 L1200,64 L0,64 Z"/></svg>
+  <svg class="divider to-alt" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C300,64 900,0 1200,32 L1200,64 L0,64 Z"/></svg>
 </section>
 
-<section class="section-alt" id="problema">
+<section class="section-alt" id="problema" aria-label="Riscos e Problemas">
   <div class="wrap problem-grid reveal">
     <div>
       <p class="eyebrow">O risco real</p>
       <h2>Uma inspeção pode parar o seu negócio da noite para o dia.</h2>
-      <p style="margin-top:16px;font-size:16px;max-width:460px;">A Vigilância Sanitária tem poder de autuar, multar, interditar e até cassar o alvará de um estabelecimento em uma única visita. Na maioria dos casos, o problema não é a intenção do empresário — é a ausência de documentação técnica e jurídica correta, produzida da forma como a legislação exige.</p>
+      <p style="margin-top:14px;max-width:480px;">A Vigilância Sanitária tem poder de autuar, multar, interditar e até cassar o alvará de um estabelecimento em uma única visita. Na maioria dos casos, o problema não é a intenção do empresário — é a ausência de documentação técnica e jurídica correta, produzida da forma como a legislação exige.</p>
+      <img src="assets/fiscalização.png" alt="Fiscal sanitário em inspeção" width="540" height="360" loading="lazy" style="margin-top:24px;border-radius:var(--radius-md);width:100%;height:auto;object-fit:cover;box-shadow:var(--shadow-md);aspect-ratio:3/2;">
     </div>
     <ul class="problem-list">
       <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
         <span><b>Alvará vencido ou nunca emitido</b> — o motivo mais comum de interdição imediata.</span>
       </li>
       <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
         <span><b>Ausência de Manual de Boas Práticas e POP</b> — exigidos na maioria das vistorias, independente do segmento.</span>
       </li>
       <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
         <span><b>PGRSS inexistente</b> — obrigatório para estabelecimentos de saúde e assemelhados.</span>
       </li>
       <li>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
         <span><b>Resposta incorreta a um auto de infração</b> — pode transformar uma pendência simples em um longo processo administrativo.</span>
       </li>
     </ul>
   </div>
-  <div class="wrap reveal" style="margin-top:40px;">
+  <div class="wrap reveal" style="margin-top:36px;">
     <div class="cta-strip">
       <p>Identificou alguma dessas situações no seu estabelecimento?</p>
-      <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Identifiquei%20uma%20pend%C3%AAncia%20no%20meu%20estabelecimento%20e%20preciso%20de%20ajuda." class="btn btn-primary" target="_blank" rel="noopener">Falar agora com um especialista</a>
+      <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Identifiquei%20uma%20pend%C3%AAncia%20no%20meu%20estabelecimento%20e%20preciso%20de%20ajuda." class="btn btn-primary" target="_blank" rel="noopener">Falar com um especialista</a>
     </div>
   </div>
-  <svg class="divider" viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,32 C300,0 900,64 1200,32 L1200,64 L0,64 Z"/></svg>
+  <svg class="divider" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C300,0 900,64 1200,32 L1200,64 L0,64 Z"/></svg>
 </section>
 
-<section id="servicos">
+<section id="servicos" aria-label="Serviços">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">O que fazemos</p>
@@ -465,49 +613,49 @@ footer a:hover{color:var(--green);}
     <div class="services-grid">
       <div class="service-card">
         <span class="service-num">01</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg>
         <h3>Licenciamento sanitário (alvará)</h3>
         <p>Levantamento documental, protocolo e acompanhamento até a emissão ou renovação do alvará.</p>
       </div>
       <div class="service-card">
         <span class="service-num">02</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
         <h3>Manual de Boas Práticas</h3>
         <p>Elaboração personalizada conforme a legislação sanitária aplicável ao seu segmento.</p>
       </div>
       <div class="service-card">
         <span class="service-num">03</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
         <h3>POP — Procedimentos Operacionais</h3>
         <p>Documentação padronizada, adaptada à rotina real do seu estabelecimento.</p>
       </div>
       <div class="service-card">
         <span class="service-num">04</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6l9-4 9 4-9 4-9-4zM3 6v12l9 4 9-4V6M12 10v10"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6l9-4 9 4-9 4-9-4zM3 6v12l9 4 9-4V6M12 10v10"/></svg>
         <h3>PGRSS</h3>
         <p>Plano de Gerenciamento de Resíduos de Serviços de Saúde, conforme normas da ANVISA.</p>
       </div>
       <div class="service-card">
         <span class="service-num">05</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 6 6 .5-4.5 4L18 19l-6-3.5L6 19l1.5-6.5L3 8.5 9 8z"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2l3 6 6 .5-4.5 4L18 19l-6-3.5L6 19l1.5-6.5L3 8.5 9 8z"/></svg>
         <h3>Defesa em autuações</h3>
         <p>Recursos administrativos e defesa técnico-jurídica em autos de infração e interdições.</p>
       </div>
       <div class="service-card">
         <span class="service-num">06</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 8a5 5 0 10-10 0M12 14v7M8 21h8M5 8h14l-1.5 6a3 3 0 01-3 2.5h-5A3 3 0 015.5 14L4 8z"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M17 8a5 5 0 10-10 0M12 14v7M8 21h8M5 8h14l-1.5 6a3 3 0 01-3 2.5h-5A3 3 0 015.5 14L4 8z"/></svg>
         <h3>Treinamentos para equipe</h3>
         <p>Capacitação prática da sua equipe em higiene, biossegurança e procedimentos exigidos em vistoria.</p>
       </div>
       <div class="service-card">
         <span class="service-num">07</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 7h-3V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2H4a1 1 0 00-1 1v11a2 2 0 002 2h14a2 2 0 002-2V8a1 1 0 00-1-1zM9 5h6v2H9z"/></svg>
-        <h3>Kits de documentação por segmento</h3>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 7h-3V5a2 2 0 00-2-2H9a2 2 0 00-2 2v2H4a1 1 0 00-1 1v11a2 2 0 002 2h14a2 2 0 002-2V8a1 1 0 00-1-1zM9 5h6v2H9z"/></svg>
+        <h3>Modelos de documentação por segmento</h3>
         <p>Pacotes completos e prontos para uso — ILPI, estética e estabelecimentos de alimentos.</p>
       </div>
       <div class="service-card">
         <span class="service-num">08</span>
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 11-9-9c2.52 0 4.85.99 6.57 2.64M21 4v5h-5"/></svg>
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 12a9 9 0 11-9-9c2.52 0 4.85.99 6.57 2.64M21 4v5h-5"/></svg>
         <h3>Consultoria jurídica contínua</h3>
         <p>Suporte recorrente para dúvidas, mudanças de legislação e prevenção de riscos regulatórios.</p>
       </div>
@@ -515,7 +663,7 @@ footer a:hover{color:var(--green);}
   </div>
 </section>
 
-<section class="section-alt" id="segmentos">
+<section class="section-alt" id="segmentos" aria-label="Segmentos atendidos">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Quem atendemos</p>
@@ -523,70 +671,70 @@ footer a:hover{color:var(--green);}
     </div>
     <div class="segments-grid reveal">
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         ILPI — Instituições de Longa Permanência para Idosos
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
         Clínicas e consultórios de saúde
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
         Restaurantes e food service
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9a6 6 0 1112 0c0 4-2 6-2 10H8c0-4-2-6-2-10z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9a6 6 0 1112 0c0 4-2 6-2 10H8c0-4-2-6-2-10z"/></svg>
         Salões de beleza e estética
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10.5 20.5L3.5 13.5a5 5 0 117-7l7 7a5 5 0 01-7 7zM8.5 8.5l7 7"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M10.5 20.5L3.5 13.5a5 5 0 117-7l7 7a5 5 0 01-7 7zM8.5 8.5l7 7"/></svg>
         Farmácias e drogarias
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.5 6.5l11 11M2 2l4.5 4.5M22 22l-4.5-4.5M17 3l-3 3 4 4 3-3zM3 17l3-3 4 4-3 3z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6.5 6.5l11 11M2 2l4.5 4.5M22 22l-4.5-4.5M17 3l-3 3 4 4 3-3zM3 17l3-3 4 4-3 3z"/></svg>
         Academias e centros esportivos
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10L12 4 2 10l10 6 10-6zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 10L12 4 2 10l10 6 10-6zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
         Escolas e creches
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21V8l7-5 7 5v13M9 21v-6h4v6M3 12h18"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 21V8l7-5 7 5v13M9 21v-6h4v6M3 12h18"/></svg>
         Hotéis e pousadas
       </div>
       <div class="segment-chip">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 22h20M4 22V10l4-3v3l4-3v3l4-3v15M18 22v-6h3v6"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2 22h20M4 22V10l4-3v3l4-3v3l4-3v15M18 22v-6h3v6"/></svg>
         Indústria de alimentos
       </div>
     </div>
     <p class="segment-note reveal">Não encontrou o seu segmento na lista? Atendemos qualquer estabelecimento de interesse da Vigilância Sanitária. <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Quero%20saber%20se%20voc%C3%AAs%20atendem%20o%20meu%20segmento." target="_blank" rel="noopener">Fale com a gente pelo WhatsApp</a> e confirme o seu caso.</p>
   </div>
-  <svg class="divider" viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,32 C300,0 900,64 1200,32 L1200,64 L0,64 Z"/></svg>
+  <svg class="divider" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C300,0 900,64 1200,32 L1200,64 L0,64 Z"/></svg>
 </section>
 
-<section id="processo">
+<section id="processo" aria-label="Como funciona">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Como funciona</p>
       <h2>Um processo claro, do diagnóstico à conformidade contínua.</h2>
     </div>
     <div class="process-grid reveal">
-      <div class="process-step">
+      <div class="process-step reveal reveal-d1">
         <div class="step-num">01</div>
         <h3>Diagnóstico</h3>
         <p>Levantamento da situação documental e estrutural do seu estabelecimento frente à legislação vigente.</p>
       </div>
-      <div class="process-step">
+      <div class="process-step reveal reveal-d2">
         <div class="step-num">02</div>
         <h3>Elaboração</h3>
         <p>Produção dos documentos técnicos e jurídicos exigidos para o seu segmento de atuação.</p>
       </div>
-      <div class="process-step">
+      <div class="process-step reveal reveal-d3">
         <div class="step-num">03</div>
         <h3>Protocolo e acompanhamento</h3>
         <p>Submissão junto ao órgão sanitário competente, com acompanhamento até a análise final.</p>
       </div>
-      <div class="process-step">
+      <div class="process-step reveal reveal-d4">
         <div class="step-num">04</div>
         <h3>Conformidade contínua</h3>
         <p>Monitoramento de prazos de renovação e de mudanças na legislação sanitária aplicável.</p>
@@ -595,7 +743,15 @@ footer a:hover{color:var(--green);}
   </div>
 </section>
 
-<section class="section-alt" id="diferenciais">
+<div style="width:100%;padding:64px 0;background:linear-gradient(135deg, var(--green-subtle) 0%, var(--paper-2) 100%);display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;text-align:center;">
+  <img src="assets/icon.png" alt="" width="64" height="64" style="border-radius:50%;">
+  <div>
+    <p style="font-family:'Fraunces',serif;font-size:22px;font-weight:600;color:var(--navy);margin:0;">Legal Sanity Brasil</p>
+    <p style="font-size:15px;color:var(--text-2);margin:4px 0 0;">Consultoria jurídica e sanitária em todo o Brasil</p>
+  </div>
+</div>
+
+<section class="section-alt" id="diferenciais" aria-label="Diferenciais">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Por que a Legal Sanity Brasil</p>
@@ -603,28 +759,28 @@ footer a:hover{color:var(--green);}
     </div>
     <div class="diff-grid reveal">
       <div class="diff-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3L2 8l10 5 10-5-10-5zM2 8v6M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3L2 8l10 5 10-5-10-5zM2 8v6M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/></svg>
         <div>
           <h3>Equipe jurídica especializada</h3>
           <p>Formação avançada em Direito Sanitário, focada nas particularidades de cada tipo de processo administrativo sanitário.</p>
         </div>
       </div>
       <div class="diff-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.77z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.77z"/></svg>
         <div>
           <h3>Consultoria técnica aplicada</h3>
           <p>Conhecimento prático de como os processos de análise e vistoria da Vigilância Sanitária funcionam por dentro.</p>
         </div>
       </div>
       <div class="diff-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10zM2 12h20"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10zM2 12h20"/></svg>
         <div>
           <h3>Atendimento em todo o Brasil</h3>
           <p>Consultoria 100% remota, sem depender da sua localização para regularizar o seu estabelecimento.</p>
         </div>
       </div>
       <div class="diff-item">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
         <div>
           <h3>Um único ponto de contato</h3>
           <p>Sem intermediários entre o jurídico e o técnico: a mesma equipe cuida do documento e da defesa dele.</p>
@@ -632,76 +788,76 @@ footer a:hover{color:var(--green);}
       </div>
     </div>
   </div>
-  <svg class="divider" viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,32 C300,0 900,64 1200,32 L1200,64 L0,64 Z"/></svg>
+  <svg class="divider" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C300,0 900,64 1200,32 L1200,64 L0,64 Z"/></svg>
 </section>
 
-<section id="kits">
+<section id="documentacoes" aria-label="Documentações por segmento">
   <div class="wrap">
     <div class="section-head reveal">
-      <p class="eyebrow">Kits de documentação</p>
-      <h2>Pacotes completos, prontos para o seu segmento.</h2>
+      <p class="eyebrow">Documentações</p>
+      <h2>Modelos prontos para o seu segmento.</h2>
     </div>
-    <div class="kits-intro reveal">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M20 12v9H4v-9M2 7h20v5H2V7zM12 22V7M12 7c-1.5 0-3-1-3-2.5S10 2 12 2s3 1 3 2.5S13.5 7 12 7zM12 7c1.5 0 3-1 3-2.5"/></svg>
-      Ao solicitar qualquer um dos kits abaixo, você ganha uma consultoria de diagnóstico gratuita para o seu estabelecimento.
+    <div class="docs-intro reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2V7zM12 22V7M12 7c-1.5 0-3-1-3-2.5S10 2 12 2s3 1 3 2.5S13.5 7 12 7zM12 7c1.5 0 3-1 3-2.5"/></svg>
+      Cada modelo inclui todos os documentos exigidos pela Vigilância Sanitária para o seu segmento, organizados e prontos para protocolo.
     </div>
-    <div class="kits-grid reveal">
+    <div class="docs-grid reveal">
 
-      <div class="kit-card featured">
-        <span class="kit-flag">Carro-chefe</span>
-        <div class="kit-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+      <div class="doc-card featured">
+        <span class="doc-flag">Destaque</span>
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
-        <p class="kit-eyebrow">RDC nº 502/2021 · ANVISA</p>
-        <h3>Kit ILPI</h3>
-        <p>Documentação completa para Instituições de Longa Permanência para Idosos, um dos segmentos mais exigidos pela Vigilância Sanitária.</p>
-        <ul class="kit-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Manual de Boas Práticas específico para ILPI</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>POPs para rotina de cuidado com idosos institucionalizados</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>PGRSS conforme exigência da ANVISA</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Checklist de preparação para vistoria</li>
+        <p class="doc-eyebrow">RDC nº 502/2021 · ANVISA</p>
+        <h3>ILPI — Instituições de Longa Permanência para Idosos</h3>
+        <p>Documentação completa para um dos segmentos mais exigidos pela Vigilância Sanitária.</p>
+        <ul class="doc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Manual de Boas Práticas específico para ILPI</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>POPs para rotina de cuidado com idosos institucionalizados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>PGRSS conforme exigência da ANVISA</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Checklist de preparação para vistoria</li>
         </ul>
-        <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Kit%20de%20documenta%C3%A7%C3%A3o%20sanit%C3%A1ria%20para%20ILPI." class="btn btn-primary" target="_blank" rel="noopener">Solicitar o Kit ILPI</a>
+        <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Tenho%20interesse%20na%20documenta%C3%A7%C3%A3o%20sanit%C3%A1ria%20para%20ILPI." class="btn btn-primary" target="_blank" rel="noopener">Solicitar modelo</a>
       </div>
 
-      <div class="kit-card">
-        <div class="kit-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9a6 6 0 1112 0c0 4-2 6-2 10H8c0-4-2-6-2-10z"/></svg>
+      <div class="doc-card">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9a6 6 0 1112 0c0 4-2 6-2 10H8c0-4-2-6-2-10z"/></svg>
         </div>
-        <p class="kit-eyebrow">Normas municipais e estaduais</p>
-        <h3>Kit Estética Segura</h3>
-        <p>Documentação para salões de beleza, clínicas de estética e espaços de bem-estar, com foco em biossegurança e rastreabilidade de procedimentos.</p>
-        <ul class="kit-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Manual de Boas Práticas para estabelecimentos de estética</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>POPs de biossegurança e esterilização de materiais</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Ficha de anamnese e termo de consentimento padronizados</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Checklist de preparação para vistoria</li>
+        <p class="doc-eyebrow">Normas municipais e estaduais</p>
+        <h3>Estética e bem-estar</h3>
+        <p>Documentação para salões de beleza, clínicas de estética e espaços de bem-estar, com foco em biossegurança.</p>
+        <ul class="doc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Manual de Boas Práticas para estabelecimentos de estética</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>POPs de biossegurança e esterilização de materiais</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Ficha de anamnese e termo de consentimento padronizados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Checklist de preparação para vistoria</li>
         </ul>
-        <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Kit%20de%20documenta%C3%A7%C3%A3o%20sanit%C3%A1ria%20para%20est%C3%A9tica." class="btn btn-ghost" target="_blank" rel="noopener">Solicitar o Kit Estética</a>
+        <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Tenho%20interesse%20na%20documenta%C3%A7%C3%A3o%20sanit%C3%A1ria%20para%20est%C3%A9tica." class="btn btn-ghost" target="_blank" rel="noopener">Solicitar modelo</a>
       </div>
 
-      <div class="kit-card">
-        <div class="kit-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+      <div class="doc-card">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
         </div>
-        <p class="kit-eyebrow">RDC nº 216/2004 · ANVISA</p>
-        <h3>Kit Documentação Sanitária para Estabelecimentos de Alimentos</h3>
-        <p>Documentação para restaurantes, padarias, lanchonetes e demais serviços de alimentação, conforme as Boas Práticas exigidas pela ANVISA.</p>
-        <ul class="kit-list">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Manual de Boas Práticas conforme RDC 216/2004</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>POPs de higienização e controle de temperatura</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Planilhas de recebimento e armazenamento de alimentos</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Checklist de preparação para vistoria</li>
+        <p class="doc-eyebrow">RDC nº 216/2004 · ANVISA</p>
+        <h3>Alimentação — Restaurantes, padarias e food service</h3>
+        <p>Documentação para serviços de alimentação conforme as Boas Práticas exigidas pela ANVISA.</p>
+        <ul class="doc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Manual de Boas Práticas conforme RDC 216/2004</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>POPs de higienização e controle de temperatura</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Planilhas de recebimento e armazenamento de alimentos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Checklist de preparação para vistoria</li>
         </ul>
-        <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Tenho%20interesse%20no%20Kit%20de%20documenta%C3%A7%C3%A3o%20sanit%C3%A1ria%20para%20estabelecimentos%20de%20alimenta%C3%A7%C3%A3o." class="btn btn-ghost" target="_blank" rel="noopener">Solicitar o Kit</a>
+        <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Tenho%20interesse%20na%20documenta%C3%A7%C3%A3o%20sanit%C3%A1ria%20para%20alimenta%C3%A7%C3%A3o." class="btn btn-ghost" target="_blank" rel="noopener">Solicitar modelo</a>
       </div>
 
     </div>
   </div>
-  <svg class="divider to-alt" viewBox="0 0 1200 64" preserveAspectRatio="none"><path d="M0,32 C300,64 900,0 1200,32 L1200,64 L0,64 Z"/></svg>
+  <svg class="divider to-alt" viewBox="0 0 1200 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0,32 C300,64 900,0 1200,32 L1200,64 L0,64 Z"/></svg>
 </section>
 
-<section class="section-alt" id="faq">
+<section class="section-alt" id="faq" aria-label="Dúvidas frequentes">
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Dúvidas frequentes</p>
@@ -710,35 +866,51 @@ footer a:hover{color:var(--green);}
     <div class="faq-list reveal">
       <details>
         <summary>O que é a Vigilância Sanitária e por que ela fiscaliza o meu estabelecimento? <span class="plus">+</span></summary>
-        <p>A Vigilância Sanitária é o conjunto de órgãos, municipais, estaduais e federais, responsáveis por proteger a saúde da população, controlando riscos sanitários em estabelecimentos que envolvem alimentação, saúde, estética, hospedagem e outras atividades. Se o seu negócio se enquadra em uma dessas categorias, ele está sujeito a licenciamento sanitário e a inspeções periódicas, independentemente do seu porte.</p>
+        <div class="answer">
+          <p>A Vigilância Sanitária é o conjunto de órgãos — municipais, estaduais e federais — responsáveis por proteger a saúde da população, controlando riscos sanitários em estabelecimentos que envolvem alimentação, saúde, estética, hospedagem e outras atividades. Se o seu negócio se enquadra em uma dessas categorias, ele está sujeito a licenciamento sanitário e a inspeções periódicas, independentemente do porte.</p>
+        </div>
       </details>
       <details>
         <summary>Qual a diferença entre advertência, multa, interdição e cassação de alvará? <span class="plus">+</span></summary>
-        <p>São níveis distintos de penalidade, previstos na legislação sanitária. A advertência é a medida mais branda, geralmente aplicada em irregularidades simples e com prazo para correção. A multa é uma sanção pecuniária, que pode ser aplicada isoladamente ou em conjunto com outras medidas. A interdição suspende total ou parcialmente o funcionamento do estabelecimento até a regularização. Já a cassação do alvará é a medida mais severa, retirando definitivamente a autorização de funcionamento. Cada caso exige uma estratégia de defesa diferente.</p>
+        <div class="answer">
+          <p>São níveis distintos de penalidade previstos na legislação sanitária. A advertência é a medida mais branda, geralmente aplicada em irregularidades simples com prazo para correção. A multa é uma sanção pecuniária, aplicada isoladamente ou em conjunto com outras medidas. A interdição suspende total ou parcialmente o funcionamento do estabelecimento até a regularização. A cassação do alvará é a medida mais severa, retirando definitivamente a autorização de funcionamento. Cada caso exige uma estratégia de defesa específica.</p>
+        </div>
       </details>
       <details>
         <summary>Existe prazo para eu recorrer de uma autuação ou interdição? <span class="plus">+</span></summary>
-        <p>Sim. Todo auto de infração ou termo de interdição traz um prazo legal para apresentação de defesa ou recurso administrativo, que costuma variar conforme o município ou estado responsável pela fiscalização. Perder esse prazo pode significar a perda do direito de contestar a penalidade, por isso o ideal é buscar orientação jurídica assim que a notificação for recebida.</p>
+        <div class="answer">
+          <p>Sim. Todo auto de infração ou termo de interdição traz um prazo legal para apresentação de defesa ou recurso administrativo, que varia conforme o município ou estado responsável pela fiscalização. Perder esse prazo pode significar a perda do direito de contestar a penalidade. O ideal é buscar orientação jurídica assim que a notificação for recebida.</p>
+        </div>
       </details>
       <details>
         <summary>O que é Responsável Técnico (RT) e o meu estabelecimento precisa ter um? <span class="plus">+</span></summary>
-        <p>O Responsável Técnico é o profissional habilitado que assume, formalmente, a responsabilidade técnica pelas atividades desenvolvidas no estabelecimento perante a Vigilância Sanitária. Diversos segmentos, como clínicas, farmácias, ILPIs e serviços de alimentação, são obrigados a ter um RT vinculado, e a ausência dessa figura costuma ser motivo recorrente de exigências em processos de licenciamento.</p>
+        <div class="answer">
+          <p>O Responsável Técnico é o profissional habilitado que assume formalmente a responsabilidade técnica pelas atividades do estabelecimento perante a Vigilância Sanitária. Diversos segmentos — como clínicas, farmácias, ILPIs e serviços de alimentação — são obrigados a ter um RT vinculado. A ausência dessa figura é motivo recorrente de exigências em processos de licenciamento.</p>
+        </div>
       </details>
       <details>
         <summary>O que é PGRSS e quais estabelecimentos são obrigados a ter esse plano? <span class="plus">+</span></summary>
-        <p>PGRSS é o Plano de Gerenciamento de Resíduos de Serviços de Saúde, documento técnico exigido por estabelecimentos que geram resíduos com risco biológico, químico ou perfurocortante, como clínicas, ILPIs, consultórios e laboratórios. Ele descreve como esses resíduos são segregados, acondicionados, armazenados e descartados, e costuma ser um dos primeiros documentos solicitados em vistoria.</p>
+        <div class="answer">
+          <p>PGRSS é o Plano de Gerenciamento de Resíduos de Serviços de Saúde, documento técnico exigido de estabelecimentos que geram resíduos com risco biológico, químico ou perfurocortante — como clínicas, ILPIs, consultórios e laboratórios. O plano descreve como esses resíduos são segregados, acondicionados, armazenados e descartados, e costuma ser um dos primeiros documentos solicitados em vistoria.</p>
+        </div>
       </details>
       <details>
-        <summary>A falta do alvará sanitário pode impedir outras licenças, como o Alvará do Corpo de Bombeiros? <span class="plus">+</span></summary>
-        <p>Pode, dependendo do município. Em diversas prefeituras, o licenciamento integrado exige que todas as licenças setoriais, sanitária, do Corpo de Bombeiros e de uso do solo, estejam regularizadas para que o alvará de funcionamento definitivo seja emitido. Uma pendência sanitária, portanto, pode travar todo o processo de regularização do negócio.</p>
+        <summary>A falta do alvará sanitário pode impedir outras licenças? <span class="plus">+</span></summary>
+        <div class="answer">
+          <p>Pode, dependendo do município. Em diversas prefeituras, o licenciamento integrado exige que todas as licenças setoriais — sanitária, do Corpo de Bombeiros e de uso do solo — estejam regularizadas para a emissão do alvará de funcionamento definitivo. Uma pendência sanitária pode travar todo o processo de regularização do negócio.</p>
+        </div>
       </details>
       <details>
-        <summary>Quanto tempo leva para regularizar um estabelecimento perante a Vigilância Sanitária? <span class="plus">+</span></summary>
-        <p>O prazo varia conforme o segmento, o município e a situação documental atual do estabelecimento. Casos simples de renovação podem ser resolvidos em poucas semanas, enquanto processos com pendências estruturais ou autuações em curso tendem a levar mais tempo. No diagnóstico inicial, mapeamos o que já existe e apresentamos um prazo realista para o seu caso específico.</p>
+        <summary>Quanto tempo leva para regularizar um estabelecimento? <span class="plus">+</span></summary>
+        <div class="answer">
+          <p>O prazo varia conforme o segmento, o município e a situação documental atual do estabelecimento. Casos simples de renovação podem ser resolvidos em poucas semanas; processos com pendências estruturais ou autuações em curso tendem a levar mais tempo. No diagnóstico inicial, mapeamos o que já existe e apresentamos um prazo realista para o seu caso.</p>
+        </div>
       </details>
       <details>
         <summary>Vocês atendem clientes fora de São Paulo? <span class="plus">+</span></summary>
-        <p>Sim. O atendimento da Legal Sanity Brasil é 100% remoto e cobre todo o território nacional, respeitando as particularidades da legislação sanitária de cada estado e município em que o estabelecimento está localizado.</p>
+        <div class="answer">
+          <p>Sim. O atendimento da Legal Sanity Brasil é 100% remoto e cobre todo o território nacional, respeitando as particularidades da legislação sanitária de cada estado e município.</p>
+        </div>
       </details>
     </div>
     <div class="faq-close reveal">
@@ -748,14 +920,14 @@ footer a:hover{color:var(--green);}
   </div>
 </section>
 
-<section class="final-cta" id="contato">
+<section class="final-cta" id="contato" aria-label="Contato">
   <div class="wrap">
     <p class="eyebrow">Fale com a gente</p>
     <h2>Vamos colocar seu estabelecimento em conformidade?</h2>
-    <p>Envie uma mensagem e conte um pouco sobre o seu estabelecimento. Respondemos com os próximos passos para regularizar a sua situação junto à Vigilância Sanitária.</p>
+    <p>Envie uma mensagem e conte um pouco sobre o seu estabelecimento. Responderemos com os próximos passos para regularizar sua situação junto à Vigilância Sanitária.</p>
     <div class="final-ctas">
       <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20a%20regulariza%C3%A7%C3%A3o%20sanit%C3%A1ria%20do%20meu%20estabelecimento." class="btn btn-primary" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.59.45.24.58.81 2.01.88 2.16.07.15.11.32.02.5-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.51 1.9 1.04.94 1.92 1.24 2.19 1.38.28.13.44.11.6-.07.16-.18.7-.82.88-1.1.19-.28.37-.23.62-.14.26.09 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.71-.17 1.39z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.59.45.24.58.81 2.01.88 2.16.07.15.11.32.02.5-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.51 1.9 1.04.94 1.92 1.24 2.19 1.38.28.13.44.11.6-.07.16-.18.7-.82.88-1.1.19-.28.37-.23.62-.14.26.09 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.71-.17 1.39z"/></svg>
         Falar no WhatsApp
       </a>
       <a href="mailto:contato@legalsanitybrasil.com.br" class="btn btn-ghost">contato@legalsanitybrasil.com.br</a>
@@ -770,7 +942,7 @@ footer a:hover{color:var(--green);}
     <div class="footer-grid">
       <div>
         <div class="footer-brand">
-          <img src="assets/logo.png" alt="Legal Sanity Brasil">
+          <img src="assets/icon.png" alt="Legal Sanity Brasil" width="50" height="50">
         </div>
         <p>Consultoria jurídica e sanitária para estabelecimentos de interesse da Vigilância Sanitária, em todo o Brasil.</p>
       </div>
@@ -779,7 +951,7 @@ footer a:hover{color:var(--green);}
         <ul>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#segmentos">Segmentos</a></li>
-          <li><a href="#kits">Kits</a></li>
+          <li><a href="#documentacoes">Documentações</a></li>
           <li><a href="#faq">Dúvidas</a></li>
         </ul>
       </div>
@@ -793,38 +965,98 @@ footer a:hover{color:var(--green);}
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Legal Sanity Brasil. Todos os direitos reservados.</span>
+      <span>&copy; <span id="year"></span> Legal Sanity Brasil. Todos os direitos reservados.</span>
       <span>As informações deste site têm caráter informativo e não substituem uma consulta jurídica individualizada.</span>
     </div>
   </div>
 </footer>
 
 <a href="https://wa.me/5512991632742?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20falar%20sobre%20a%20regulariza%C3%A7%C3%A3o%20sanit%C3%A1ria%20do%20meu%20estabelecimento." class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.59.45.24.58.81 2.01.88 2.16.07.15.11.32.02.5-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.51 1.9 1.04.94 1.92 1.24 2.19 1.38.28.13.44.11.6-.07.16-.18.7-.82.88-1.1.19-.28.37-.23.62-.14.26.09 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.71-.17 1.39z"/></svg>
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm5.8 14.06c-.24.68-1.4 1.3-1.93 1.36-.5.06-1.02.09-1.65-.1-.38-.12-.87-.28-1.5-.55-2.63-1.14-4.35-3.8-4.48-3.98-.13-.17-1.07-1.42-1.07-2.71 0-1.29.68-1.92.92-2.18.24-.26.52-.32.7-.32h.5c.16 0 .38-.06.59.45.24.58.81 2.01.88 2.16.07.15.11.32.02.5-.09.18-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.28.28-.13.55.16.28.7 1.17 1.51 1.9 1.04.94 1.92 1.24 2.19 1.38.28.13.44.11.6-.07.16-.18.7-.82.88-1.1.19-.28.37-.23.62-.14.26.09 1.63.77 1.9.91.28.14.46.21.53.33.07.12.07.71-.17 1.39z"/></svg>
 </a>
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-var toggle = document.getElementById('menuToggle');
-var links = document.getElementById('navLinks');
-toggle.addEventListener('click', function(){
-  var isOpen = links.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', isOpen);
-  document.body.style.overflow = isOpen ? 'hidden' : '';
-});
-links.querySelectorAll('a').forEach(function(a){
-  a.addEventListener('click', function(){ links.classList.remove('open'); document.body.style.overflow=''; });
-});
-if ('IntersectionObserver' in window) {
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
+
+/* Mobile menu */
+(function(){
+  var toggle = document.getElementById('menuToggle');
+  var links = document.getElementById('navLinks');
+  var navLinks = links.querySelectorAll('a');
+  var body = document.body;
+
+  function setMenu(open){
+    links.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open);
+    body.style.overflow = open ? 'hidden' : '';
+    toggle.innerHTML = open
+      ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>'
+      : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg>';
+  }
+
+  toggle.addEventListener('click', function(){ setMenu(!links.classList.contains('open')); });
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function(){ setMenu(false); });
+  }
+})();
+
+/* Header scroll */
+(function(){
+  var header = document.getElementById('header');
+  var ticking = false;
+  window.addEventListener('scroll', function(){
+    if (!ticking) {
+      window.requestAnimationFrame(function(){
+        header.classList.toggle('scrolled', window.scrollY > 20);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+})();
+
+/* Skip link */
+(function(){
+  var el = document.querySelector('.skip-link');
+  if (el) {
+    el.addEventListener('focus', function(){ this.style.top = '8px'; });
+    el.addEventListener('blur', function(){ this.style.top = '-100%'; });
+  }
+})();
+
+/* Scroll reveal */
+(function(){
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          entries[i].target.classList.add('in');
+          io.unobserve(entries[i].target);
+        }
+      }
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    var els = document.querySelectorAll('.reveal');
+    for (var j = 0; j < els.length; j++) { io.observe(els[j]); }
+  } else {
+    var fallback = document.querySelectorAll('.reveal');
+    for (var k = 0; k < fallback.length; k++) { fallback[k].classList.add('in'); }
+  }
+})();
+
+/* FAQ accordion */
+(function(){
+  var details = document.querySelectorAll('.faq-list details');
+  for (var d = 0; d < details.length; d++) {
+    details[d].addEventListener('toggle', function(){
+      if (this.open) {
+        var siblings = document.querySelectorAll('.faq-list details');
+        for (var s = 0; s < siblings.length; s++) {
+          if (siblings[s] !== this) { siblings[s].removeAttribute('open'); }
+        }
+      }
     });
-  }, {threshold:0.15});
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-} else {
-  document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
-}
+  }
+})();
 </script>
 
 </body>
