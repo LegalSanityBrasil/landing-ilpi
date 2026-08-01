@@ -198,6 +198,14 @@ footer a:hover{color:var(--green);}
   .form-body{padding:24px 16px 20px;}
   .form-cols{grid-template-columns:1fr !important;}
 }
+
+  .op{display:inline-flex;align-items:center;gap:4px;background:#fff;border:1px solid #d0d4d9;border-radius:6px;padding:7px 12px;cursor:pointer;font-size:13px;transition:all .15s}.op:has(input:checked){border-color:#0F2637;background:#EEF0EB;font-weight:600}.op input{accent-color:#1F9E3F;margin:0}
+  .pq{margin-bottom:14px}
+  input:focus,select:focus{border-color:#1F9E3F!important;box-shadow:0 0 0 2px rgba(31,158,63,.15)}
+  button:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(31,158,63,.4)!important}
+  button:active{transform:translateY(0)}
+  @media(max-width:600px){.op{padding:8px 14px;font-size:14px;flex:1;justify-content:center}}
+
 </style>
 </head>
 <body>
@@ -242,329 +250,323 @@ document.getElementById('menuToggle').addEventListener('click', function(){
   <div class="form-body">
     <p style="font-size:14px;color:var(--text-2);margin:0 0 20px;text-align:center">Preencha os dados abaixo e nossa equipe analisará a situação do seu estabelecimento. O relatório completo será entregue em até <strong>5 dias úteis</strong> via WhatsApp — nossa equipe prepara uma análise personalizada, não um relatório automático.</p>
 
-    <form id="diagnosticoForm" method="POST" action="https://script.google.com/macros/s/AKfycbye2TdKwx-SHODIP89nVTeZ8PPcllmqK1AZNnLRWRXR-JtA-vKe-bxZxOdHc1Nk6P7l/exec">
+    <form id="diagnosticoForm" style="padding:24px 0" action="https://script.google.com/macros/s/AKfycbye2TdKwx-SHODIP89nVTeZ8PPcllmqK1AZNnLRWRXR-JtA-vKe-bxZxOdHc1Nk6P7l/exec" method="POST">
+    <div style="padding:0 32px">
 
-      <h3 class="form-section-title">📋 Dados do Estabelecimento</h3>
-
-      <div class="form-group">
-        <label for="nome_ilpi">Nome da ILPI / Estabelecimento *</label>
-        <input type="text" id="nome_ilpi" name="nome_ilpi" required>
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin-bottom:18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">📋 1. DADOS DA ILPI</h2>
       </div>
 
-      <div class="form-cols" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-        <div class="form-group">
-          <label for="cidade">Cidade *</label>
-          <input type="text" id="cidade" name="cidade" required>
-        </div>
-        <div class="form-group">
-          <label for="whatsapp">WhatsApp *</label>
-          <input type="text" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
-        </div>
+      <div style="margin-bottom:16px">
+        <label style="display:block;font-size:14px;font-weight:600;color:#2c3e50;margin-bottom:6px">Nome da ILPI <span style="color:#e74c3c">*</span></label>
+        <input type="text" name="nome_ilpi" required style="width:100%;padding:10px 14px;border:1px solid #d0d4d9;border-radius:6px;font-size:14px;font-family:inherit;box-sizing:border-box;outline:none" placeholder="Ex: Lar do Idoso Esperança">
       </div>
 
-      <h3 class="form-section-title">👥 Residentes</h3>
-
-      <div class="form-group">
-        <label>Total de residentes *</label>
-        <div class="radio-group" id="total_residentes_group">
-          <label><input type="radio" name="total_residentes" value="1_15"> 1 a 15</label>
-          <label><input type="radio" name="total_residentes" value="16_30"> 16 a 30</label>
-          <label><input type="radio" name="total_residentes" value="31_50"> 31 a 50</label>
-          <label><input type="radio" name="total_residentes" value="51_100"> 51 a 100</label>
-          <label><input type="radio" name="total_residentes" value="acima_100"> Acima de 100</label>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px">
+        <div style="flex:1;min-width:200px">
+          <label style="display:block;font-size:14px;font-weight:600;color:#2c3e50;margin-bottom:6px">Cidade / Estado <span style="color:#e74c3c">*</span></label>
+          <input type="text" name="cidade" required style="width:100%;padding:10px 14px;border:1px solid #d0d4d9;border-radius:6px;font-size:14px;font-family:inherit;box-sizing:border-box;outline:none" placeholder="São Paulo / SP">
+        </div>
+        <div style="flex:1;min-width:200px">
+          <label style="display:block;font-size:14px;font-weight:600;color:#2c3e50;margin-bottom:6px">Total de residentes</label>
+          <input type="number" name="total_residentes" min="1" style="width:100%;padding:10px 14px;border:1px solid #d0d4d9;border-radius:6px;font-size:14px;font-family:inherit;box-sizing:border-box;outline:none" placeholder="Ex: 30">
         </div>
       </div>
 
-      <div class="form-cols" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
-        <div class="form-group">
-          <label for="residentes_gi">Grau I (independentes)</label>
-          <input type="number" id="residentes_gi" name="residentes_gi" min="0" value="0">
+      <div style="background:#EEF0EB;padding:14px 18px;border-radius:8px;margin:0 0 16px;border-left:3px solid #B98526">
+        <p style="font-size:13px;font-weight:600;color:#0F2637;margin:0 0 10px">📊 Distribuição por grau de dependência (RDC 502/2021)</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <div style="flex:1;min-width:120px">
+            <label style="display:block;font-size:12px;font-weight:600;color:#1F9E3F;margin-bottom:4px">Grau I (independentes)</label>
+            <input type="number" name="residentes_gi" min="0" value="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
+          </div>
+          <div style="flex:1;min-width:120px">
+            <label style="display:block;font-size:12px;font-weight:600;color:#B98526;margin-bottom:4px">Grau II (semidependentes)</label>
+            <input type="number" name="residentes_gii" min="0" value="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
+          </div>
+          <div style="flex:1;min-width:120px">
+            <label style="display:block;font-size:12px;font-weight:600;color:#e74c3c;margin-bottom:4px">Grau III (dependentes/acamados)</label>
+            <input type="number" name="residentes_giii" min="0" value="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="residentes_gii">Grau II (semidependentes)</label>
-          <input type="number" id="residentes_gii" name="residentes_gii" min="0" value="0">
-        </div>
-        <div class="form-group">
-          <label for="residentes_giii">Grau III (dependentes/acamados)</label>
-          <input type="number" id="residentes_giii" name="residentes_giii" min="0" value="0">
+        <p style="font-size:11px;color:#95a5a6;margin:8px 0 0">Esses dados permitem calcular se a quantidade de cuidadores está adequada conforme a RDC 502/2021.</p>
+      </div>
+      </div>
+
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin:28px 0 18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">⚖️ 2. MARCO REGULATÓRIO</h2>
+      </div>
+      <p style="font-size:13px;color:#7f8c8d;margin:-10px 0 14px">Documentos que comprovam a existência legal da sua ILPI</p>
+
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">1. Alvará Sanitário vigente?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q1" value="sim"></label>
+          <label class="op">Vencido mas com pedido<input type="radio" name="q1" value="parcial"></label>
+          <label class="op">Não possui<input type="radio" name="q1" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q1" value="nao_sei"></label>
         </div>
       </div>
 
-      <h3 class="form-section-title">👩‍⚕️ Cuidadores</h3>
-
-      <div class="form-group">
-        <label for="total_cuidadores">Total de cuidadores</label>
-        <input type="number" id="total_cuidadores" name="total_cuidadores" min="0" value="0">
-      </div>
-
-      <div class="form-cols" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
-        <div class="form-group">
-          <label for="cuidadores_manha">🌅 Manhã (6h-14h)</label>
-          <input type="number" id="cuidadores_manha" name="cuidadores_manha" min="0" value="0">
-        </div>
-        <div class="form-group">
-          <label for="cuidadores_tarde">☀️ Tarde (14h-22h)</label>
-          <input type="number" id="cuidadores_tarde" name="cuidadores_tarde" min="0" value="0">
-        </div>
-        <div class="form-group">
-          <label for="cuidadores_noite">🌙 Noite (22h-6h)</label>
-          <input type="number" id="cuidadores_noite" name="cuidadores_noite" min="0" value="0">
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">2. ILPI legalmente constituída (Estatuto registrado, CNES ativo)?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q2" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q2" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q2" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q2" value="nao_sei"></label>
         </div>
       </div>
 
-      <h3 class="form-section-title">📄 Situação Documental</h3>
-      <p style="font-size:13px;color:var(--text-3);margin:-8px 0 16px">Responda conforme a situação atual do seu estabelecimento.</p>
-
-      <div class="form-group">
-        <label>1. Alvará de Funcionamento / Licença Sanitária</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q1" value="sim" required> ✅ Sim (válido)</label>
-          <label><input type="radio" name="q1" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q1" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q1" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">3. Contrato formal de prestação de serviço com o idoso/responsável?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q3" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q3" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q3" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q3" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>2. Cadastro CNPJ / CNAE Específico</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q2" value="sim"> ✅ Sim (CNAE correto)</label>
-          <label><input type="radio" name="q2" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q2" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q2" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">4. Projeto Arquitetônico aprovado pela VISA?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q4" value="sim"></label>
+          <label class="op">Em análise<input type="radio" name="q4" value="parcial"></label>
+          <label class="op">Não possui<input type="radio" name="q4" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q4" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>3. Responsável Técnico (RT) Habilitado</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q3" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q3" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q3" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q3" value="nao_sei"> ❓ Não sei</label>
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin:28px 0 18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">📄 3. DOCUMENTAÇÃO OBRIGATÓRIA</h2>
+      </div>
+      <p style="font-size:13px;color:#7f8c8d;margin:-10px 0 14px">Planos e manuais exigidos pela Vigilância Sanitária</p>
+
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">5. PAIS — Plano de Atenção Integral à Saúde elaborado?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q5" value="sim"></label>
+          <label class="op">Desatualizado<input type="radio" name="q5" value="parcial"></label>
+          <label class="op">Não possui<input type="radio" name="q5" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q5" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>4. Estatuto / Contrato Social Atualizado</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q4" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q4" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q4" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q4" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">6. PGRSS — Plano de Gerenciamento de Resíduos?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q6" value="sim"></label>
+          <label class="op">Não possui<input type="radio" name="q6" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q6" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>5. Regimento Interno Implantado</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q5" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q5" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q5" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q5" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">7. Manual de Boas Práticas e POPs das rotinas assistenciais?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q7" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q7" value="parcial"></label>
+          <label class="op">Não possui<input type="radio" name="q7" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q7" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>6. Manual de Boas Práticas</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q6" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q6" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q6" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q6" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq" style="margin-bottom:14px">
+        <p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">8. Plano de Trabalho e Regimento Interno atualizados?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q8" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q8" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q8" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q8" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>7. Procedimentos Operacionais Padrão (POPs)</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q7" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q7" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q7" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q7" value="nao_sei"> ❓ Não sei</label>
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin:28px 0 18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">🏛️ 4. ESTRUTURA FÍSICA</h2>
+      </div>
+      <p style="font-size:13px;color:#7f8c8d;margin:-10px 0 14px">Conformidade da edificação com a RDC 502/2021</p>
+
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">9. Dormitórios adequados (separados por sexo, max 4 pessoas, banheiro, área mínima)?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q9" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q9" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q9" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q9" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">10. Banheiros com box para cadeirantes e portas com vão livre inferior?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q10" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q10" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q10" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q10" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">11. Circulações com largura mínima de 1m, corrimão e luz de vigília?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q11" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q11" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q11" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q11" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">12. Refeitório, cozinha e despensa conforme legislação?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q12" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q12" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q12" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q12" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">13. Lavanderia e abrigo externo de resíduos adequados?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q13" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q13" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q13" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q13" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">14. Área externa descoberta, sala administrativa e espaço ecumênico?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q14" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q14" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q14" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q14" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>8. Plano de Atenção Integral à Saúde (PAIS)</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q8" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q8" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q8" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q8" value="nao_sei"> ❓ Não sei</label>
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin:28px 0 18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">👥 5. RECURSOS HUMANOS</h2>
+      </div>
+
+      <div style="background:#EEF0EB;padding:14px 18px;border-radius:8px;margin-bottom:14px;border-left:3px solid #B98526">
+        <p style="font-size:13px;font-weight:600;color:#0F2637;margin:0 0 10px">👥 Dados da equipe de cuidadores</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+          <div style="flex:1;min-width:140px">
+            <label style="display:block;font-size:12px;font-weight:600;color:#2c3e50;margin-bottom:4px">Total de cuidadores</label>
+            <input type="number" name="total_cuidadores" min="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none" placeholder="Ex: 8">
+          </div>
+        </div>
+        <p style="font-size:12px;font-weight:600;color:#0F2637;margin:0 0 6px">Distribuição por turno (quantos cuidadores em cada):</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <div style="flex:1;min-width:100px">
+            <label style="display:block;font-size:11px;font-weight:600;color:#f39c12;margin-bottom:4px">☀️ Manhã (6h-14h)</label>
+            <input type="number" name="cuidadores_manha" min="0" value="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
+          </div>
+          <div style="flex:1;min-width:100px">
+            <label style="display:block;font-size:11px;font-weight:600;color:#e67e22;margin-bottom:4px">🌤️ Tarde (14h-22h)</label>
+            <input type="number" name="cuidadores_tarde" min="0" value="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
+          </div>
+          <div style="flex:1;min-width:100px">
+            <label style="display:block;font-size:11px;font-weight:600;color:#2c3e50;margin-bottom:4px">🌙 Noite (22h-6h)</label>
+            <input type="number" name="cuidadores_noite" min="0" value="0" style="width:100%;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
+          </div>
+        </div>
+        <p style="font-size:11px;color:#95a6a6;margin:8px 0 0">Com base na distribuição de residentes (GI/GII/GIII) e na RDC 502/2021, vamos calcular se sua equipe está dentro do mínimo exigido por turno.</p>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">15. Na sua percepção, a quantidade de cuidadores é suficiente?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q15" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q15" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q15" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q15" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">16. Profissionais de lazer, limpeza, alimentação e lavanderia em quantidade compatível?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q16" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q16" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q16" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q16" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">17. Realiza Educação Permanente em gerontologia para a equipe?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q17" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q17" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q17" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q17" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>9. PGRSS (Resíduos de Saúde)</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q9" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q9" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q9" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q9" value="nao_sei"> ❓ Não sei</label>
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin:28px 0 18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">❤️ 6. SAÚDE E CUIDADOS</h2>
+      </div>
+
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">18. Registro Individual completo de cada residente?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q18" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q18" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q18" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q18" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">19. Esquema vacinal dos residentes conforme PNI?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q19" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q19" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q19" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q19" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">20. Controle de medicamentos sob responsabilidade do RT?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q20" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q20" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q20" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q20" value="nao_sei"></label>
+        </div>
+      </div>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">21. Rotinas para intercorrências médicas e notificação compulsória?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q21" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q21" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q21" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q21" value="nao_sei"></label>
         </div>
       </div>
 
-      <div class="form-group">
-        <label>10. Plano de Contingência Sanitária</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q10" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q10" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q10" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q10" value="nao_sei"> ❓ Não sei</label>
+      <div style="background:#0F2637;padding:12px 18px;border-radius:8px;margin:28px 0 18px">
+        <h2 style="color:#B98526;font-size:15px;margin:0;font-weight:700">🔍 7. FISCALIZAÇÃO</h2>
+      </div>
+
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">22. Recebeu visita da Vigilância Sanitária nos últimos 12 meses?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim, sem autuação<input type="radio" name="q22" value="sim_sem_autuacao"></label>
+          <label class="op">Sim, fui notificado<input type="radio" name="q22" value="sim_com_notificacao"></label>
+          <label class="op">Sim, fui multado<input type="radio" name="q22" value="sim_com_multa"></label>
+          <label class="op">Não recebi<input type="radio" name="q22" value="nao"></label>
         </div>
       </div>
-
-      <div class="form-group">
-        <label>11. Programa de Educação Permanente</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q11" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q11" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q11" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q11" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">23. Realiza avaliação de desempenho com os 6 indicadores obrigatórios?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Sim<input type="radio" name="q23" value="sim"></label>
+          <label class="op">Parcialmente<input type="radio" name="q23" value="parcial"></label>
+          <label class="op">Não<input type="radio" name="q23" value="nao"></label>
+          <label class="op">Não sei<input type="radio" name="q23" value="nao_sei"></label>
         </div>
       </div>
-
-      <div class="form-group">
-        <label>12. Plano de Trabalho Institucional</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q12" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q12" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q12" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q12" value="nao_sei"> ❓ Não sei</label>
+      <div class="pq"><p style="font-size:14px;font-weight:600;color:#2c3e50;margin:0 0 6px">24. Como você avalia a situação atual da sua ILPI?</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <label class="op">Totalmente regular<input type="radio" name="q24" value="regular"></label>
+          <label class="op">Pequenas não conformidades<input type="radio" name="q24" value="poucos_riscos"></label>
+          <label class="op">Muitos pontos críticos<input type="radio" name="q24" value="muitos_riscos"></label>
+          <label class="op">Não sei avaliar<input type="radio" name="q24" value="nao_sei"></label>
         </div>
       </div>
+    </div>
 
-      <div class="form-group">
-        <label>13. Estrutura Física e Acessibilidade</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q13" value="sim"> ✅ Sim (adequada)</label>
-          <label><input type="radio" name="q13" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q13" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q13" value="nao_sei"> ❓ Não sei</label>
-        </div>
+    <div style="background:#EEF0EB;padding:32px;margin-top:32px;text-align:center">
+      <h3 style="color:#0F2637;font-size:17px;margin:0 0 14px;font-weight:700">📱 Quer receber o resultado?</h3>
+      <p style="font-size:13.5px;color:#7f8c8d;margin:0 0 8px">Informe seu WhatsApp para receber <strong>gratuitamente</strong> o relatório completo com as não conformidades, riscos e recomendações personalizadas para sua ILPI.</p>
+      <div style="max-width:360px;margin:14px auto 0">
+        <input type="tel" name="whatsapp" required placeholder="(XX) 9XXXX-XXXX" style="width:100%;padding:12px 16px;border:2px solid #1F9E3F;border-radius:8px;font-size:16px;font-family:inherit;box-sizing:border-box;outline:none;text-align:center;font-weight:600">
+        <p style="font-size:12px;color:#95a5a6;margin:8px 0 0">Seu número será usado apenas para enviar o diagnóstico.</p>
+        <button type="submit" style="width:100%;margin-top:16px;background:linear-gradient(135deg,#1F9E3F 0%,#28b054 100%);color:#fff;padding:14px 40px;border:none;border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 4px 12px rgba(31,158,63,.3)">📩 RECEBER MEU DIAGNÓSTICO GRÁTIS</button>
       </div>
-
-      <div class="form-group">
-        <label>14. AVCB / Licença do Corpo de Bombeiros</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q14" value="sim"> ✅ Sim (válido)</label>
-          <label><input type="radio" name="q14" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q14" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q14" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>15. Dimensionamento de Cuidadores por Turno</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q15" value="sim"> ✅ Sim (adequado)</label>
-          <label><input type="radio" name="q15" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q15" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q15" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>16. Equipe Multidisciplinar Compatível</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q16" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q16" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q16" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q16" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>17. Capacitação em Biossegurança da Equipe</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q17" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q17" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q17" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q17" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>18. Prontuário e Registro Individual</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q18" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q18" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q18" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q18" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>19. Controle de Esquema Vacinal</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q19" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q19" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q19" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q19" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>20. Controle e Armazenamento de Medicamentos</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q20" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q20" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q20" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q20" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>21. Protocolo de Intercorrências Médicas</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q21" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q21" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q21" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q21" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>22. Histórico de Fiscalização / Notificações</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q22" value="sim_sem_autuacao"> ✅ Sim (sem autuações)</label>
-          <label><input type="radio" name="q22" value="sim_com_notificacao"> ⚠️ Sim (com notificações)</label>
-          <label><input type="radio" name="q22" value="nunca"> ❌ Nunca fui fiscalizado</label>
-          <label><input type="radio" name="q22" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>23. Avaliação Periódica de Desempenho</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q23" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q23" value="parcial"> ⏳ Parcial / Em andamento</label>
-          <label><input type="radio" name="q23" value="nao"> ❌ Não</label>
-          <label><input type="radio" name="q23" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>24. Gestão Geral de Biossegurança e Riscos</label>
-        <div class="radio-group">
-          <label><input type="radio" name="q24" value="sim"> ✅ Sim</label>
-          <label><input type="radio" name="q24" value="poucos_riscos"> ⚠️ Poucos riscos</label>
-          <label><input type="radio" name="q24" value="muitos_riscos"> ❌ Muitos riscos</label>
-          <label><input type="radio" name="q24" value="nao_sei"> ❓ Não sei</label>
-        </div>
-      </div>
-
-      <div class="form-group" style="margin-top:24px">
-        <label for="email">📧 E-mail para contato</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com">
-      </div>
-
-      <div class="form-submit">
-        <button type="submit" class="btn-submit">🎯 ENVIAR DIAGNÓSTICO</button>
-      </div>
-
-    </form>
+    </div>
+  </form>
   </div>
 </div>
 
@@ -609,7 +611,7 @@ document.getElementById('menuToggle').addEventListener('click', function(){
 
 <script>
 document.getElementById('diagnosticoForm').addEventListener('submit', function(e) {
-  var btn = this.querySelector('.btn-submit');
+  var btn = this.querySelector('button[type=submit]');
   btn.textContent = '⏳ ENVIANDO...';
   btn.disabled = true;
 });
