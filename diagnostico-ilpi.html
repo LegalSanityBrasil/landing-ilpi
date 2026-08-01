@@ -275,17 +275,17 @@ document.getElementById('menuToggle').addEventListener('click', function(){
 
       <div style="background:#EEF0EB;padding:14px 18px;border-radius:8px;margin:0 0 16px;border-left:3px solid #B98526">
         <p style="font-size:13px;font-weight:600;color:#0F2637;margin:0 0 10px">📊 Distribuição por grau de dependência (RDC 502/2021)</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end">
           <div style="flex:1;min-width:120px">
-            <label style="display:block;font-size:12px;font-weight:600;color:#1F9E3F;margin-bottom:4px">Grau I (independentes)</label>
+            <label style="display:block;font-size:12px;font-weight:600;color:#1F9E3F;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="Grau I (independentes)">Grau I (indep.)</label>
             <input type="number" name="residentes_gi" min="0" value="0" style="width:88px;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
           </div>
           <div style="flex:1;min-width:120px">
-            <label style="display:block;font-size:12px;font-weight:600;color:#B98526;margin-bottom:4px">Grau II (semidependentes)</label>
+            <label style="display:block;font-size:12px;font-weight:600;color:#B98526;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="Grau II (semidependentes)">Grau II (semidep.)</label>
             <input type="number" name="residentes_gii" min="0" value="0" style="width:88px;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
           </div>
           <div style="flex:1;min-width:120px">
-            <label style="display:block;font-size:12px;font-weight:600;color:#e74c3c;margin-bottom:4px">Grau III (dependentes/acamados)</label>
+            <label style="display:block;font-size:12px;font-weight:600;color:#e74c3c;margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="Grau III (dependentes/acamados)">Grau III (dep./acam.)</label>
             <input type="number" name="residentes_giii" min="0" value="0" style="width:88px;padding:8px 12px;border:1px solid #d0d4d9;border-radius:6px;font-size:13px;font-family:inherit;box-sizing:border-box;outline:none">
           </div>
         </div>
