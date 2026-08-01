@@ -1,3 +1,15 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/diagnostico-ILPI",
+      "destination": "/diagnostico-ilpi",
+      "permanent": true
+    },
+    {
+      "source": "/diagnostico-ILPI.html",
+      "destination": "/diagnostico-ilpi",
+      "permanent": true
+    }
+  ]
 }
