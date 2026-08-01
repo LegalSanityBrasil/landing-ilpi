@@ -2,13 +2,28 @@
   "cleanUrls": true,
   "redirects": [
     {
-      "source": "/diagnostico-ILPI",
-      "destination": "/diagnostico-ilpi",
+      "source": "/diagnostico-ILPI.html",
+      "destination": "/ilpi/diagnostico-ilpi",
       "permanent": true
     },
     {
-      "source": "/diagnostico-ILPI.html",
-      "destination": "/diagnostico-ilpi",
+      "source": "/diagnostico-ILPI",
+      "destination": "/ilpi/diagnostico-ilpi",
+      "permanent": true
+    },
+    {
+      "source": "/diagnostico-ilpi",
+      "destination": "/ilpi/diagnostico-ilpi",
+      "permanent": true
+    },
+    {
+      "source": "/kit-ilpi",
+      "destination": "/ilpi/kit-ilpi",
+      "permanent": true
+    },
+    {
+      "source": "/kit-ilpi.html",
+      "destination": "/ilpi/kit-ilpi",
       "permanent": true
     }
   ]
