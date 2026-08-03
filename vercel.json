@@ -26,5 +26,15 @@
       "destination": "/ilpi/kit-ilpi",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/apresentacao_alencar_odonto/:path*",
+      "destination": "https://legalsanitybrasil.github.io/alencar-odontologia/:path*"
+    },
+    {
+      "source": "/apresentacao_alencar_odonto",
+      "destination": "https://legalsanitybrasil.github.io/alencar-odontologia/"
+    }
   ]
 }
