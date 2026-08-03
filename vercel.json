@@ -2,6 +2,11 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/apresentacao_alencar_odonto/",
+      "destination": "/apresentacao_alencar_odonto",
+      "permanent": false
+    },
+    {
       "source": "/diagnostico-ILPI.html",
       "destination": "/ilpi/diagnostico-ilpi",
       "permanent": true
